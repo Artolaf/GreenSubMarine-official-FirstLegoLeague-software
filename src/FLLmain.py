@@ -400,7 +400,7 @@ def runStage():
     driveMotors.loadStandardAccSpeeds()
 
 
-    MfnkR.driveToAbsolute(-350, 10)                     #Ausrichten und motor zurücksetzten
+    MfnkR.driveToAbsolute(-350, 10)                     #Ausrichten und motor zurucksetzten
     MfnkL.driveToAbsolute(0, 10)
 
     return selectNextRun(runStage, runGreen)
@@ -415,7 +415,7 @@ def runPrinter():
     return selectNextRun(runPrinter, runStage)
 
 def runGreen():
-    MfnkR.driveToAbsolute(-350, 10)                     #Ausrichten und motor zurücksetzten
+    MfnkR.driveToAbsolute(-350, 10)                     #Ausrichten und motor zurucksetzten
     MfnkL.driveToAbsolute(0, 10)
     basicRoboFunctions.waitButton()
     driveMotors.driveSteer(0, -25)
@@ -440,7 +440,7 @@ def runGreen():
     MfnkR.driveMotor(-100, 50)
     
     
-    driveMotors.driveStraight(38 + 2.5, 75, 0, None, (75, 500))                       #Blume ist ausgeführt
+    driveMotors.driveStraight(38 + 2.5, 75, 0, None, (75, 500))                       #Blume ist ausgefuhrt
     MfnkL.setMotorSpeed(-45)                                                       #"Blumenarm" wird eingezogen  
     
                              
@@ -495,7 +495,7 @@ def runExample():
     #motorassamly
     driveMotors.driveStraight(-21, 100) #geradeaus distanz fahren
     driveMotors.driveSteer(50,90) #motoren anschalten (kurve) 
-    time.sleep(1) #roboter fährt 1s
+    time.sleep(1) #roboter fahrt 1s
     driveMotors.driveOff()  #motoren stoppen
     #curves
     driveMotors.gyroCurve(45,2)
@@ -516,7 +516,7 @@ def runExample():
         pass
     while not ScolF.isBlack(): #solange fahren wie nicht schwarz  ist
         pass
-    while not ScolF.isWhite(): #solange fahren wie nicht weiß ist
+    while not ScolF.isWhite(): #solange fahren wie nicht weiss ist
         pass
     driveMotors.driveOff()  #sollte nach schwarz halten
 
